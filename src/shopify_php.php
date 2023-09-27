@@ -11,7 +11,7 @@ curl_setopt($ch, CURLOPT_URL, "https://realtime.oxylabs.io/v1/queries");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($params));
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_USERPWD, "YOUR_USERNAME" . ":" . "YOUR_PASSWORD"); //Your credentials go here
+curl_setopt($ch, CURLOPT_USERPWD, "USERNAME" . ":" . "PASSWORD"); //Your credentials go here
 
 $headers = array();
 $headers[] = "Content-Type: application/json";
