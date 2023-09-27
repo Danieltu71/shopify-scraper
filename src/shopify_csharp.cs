@@ -10,8 +10,8 @@ namespace OxyApi
     {
         static async Task Main()
         {
-            const string Username = "YOUR_USERNAME";
-            const string Password = "YOUR_PASSWORD";
+            const string Username = "USERNAME";
+            const string Password = "PASSWORD";
 
             var parameters = new Dictionary&lt;string, string>()
             {
