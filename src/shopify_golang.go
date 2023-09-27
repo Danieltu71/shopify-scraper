@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-    const Username = "YOUR_USERNAME"
-    const Password = "YOUR_PASSWORD"
+    const Username = "USERNAME"
+    const Password = "PASSWORD"
 
     payload := map[string]string{
       	"source": "universal_ecommerce",
