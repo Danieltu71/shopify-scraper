@@ -1,4 +1,4 @@
-&lt;?php
+<?php
 
 $params = array(
   'source' => 'universal_ecommerce',
