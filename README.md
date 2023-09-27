@@ -18,11 +18,52 @@ Shopify page.
 This code sample makes a request to our API and retrieves the HTML of
 the Shopify homepage:
 
+```python
+import requests
+from pprint import pprint
+
+# Structure payload.
+payload = {
+    'source': 'universal_ecommerce',
+    'url': 'https://www.shopify.com/'
+}
+
+# Get response.
+response = requests.request(
+    'POST',
+    'https://realtime.oxylabs.io/v1/queries',
+    auth=('USERNAME', 'PASSWORD'),  # Your credentials go here
+    json=payload,
+)
+
+# Instead of response with job status and results URL, this will return the
+# JSON response with results.
+pprint(response.json())
+```
+
 Visit the
 [<u>documentation</u>](https://developers.oxylabs.io/scraper-apis/e-commerce-scraper-api/all-domains)
 for more details about the payload parameters.
 
 ### Output sample
+
+```json
+{
+  "results": [
+    {
+      "content": "<!doctype html>\n<html lang=\"en\">\n<head>
+      ...
+      </script></body>\n</html>\n",
+      "created_at": "2023-06-12 14:57:02",
+      "updated_at": "2023-06-12 14:57:03",
+      "page": 1,
+      "url": "https://www.shopify.com/",
+      "job_id": "7074036885059813377",
+      "status_code": 200
+    }
+  ]
+}
+```
 
 Oxylabs’ Shopify Scraper API eases the scraping process and allows you
 to collect public information from any website built on the Spotify
