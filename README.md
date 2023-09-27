@@ -11,7 +11,7 @@ API</u>](https://oxylabs.io/products/scraper-api).
 
 To extract public Shopify data, simply send a request to our API with
 the URLs you want to scrape, and you will receive the HTML of any
-Shopify page.
+Shopify website.
 
 ### Python code example
 
